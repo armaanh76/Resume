@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 21cm;
+    height: 31.5cm;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+a {
+    color: white;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;  
+    margin-bottom: 10px;
+}
+
+.main-content {
+    width: 70%;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.skills ul, .experience ul, .projects ul, .education ul, .info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills ul li, .experience ul li, .projects ul li, .education ul li, .info ul li {
+    background: #ddd;
+    border-left: 6px solid #2c3e50;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+@media print {
+    body {
+        background: none;
+    }
+    .container {
+        box-shadow: none;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 2cm;
+    }
+}
+.spacer {
+    height: 25px; /* Adjust as needed */
+}
+
+
